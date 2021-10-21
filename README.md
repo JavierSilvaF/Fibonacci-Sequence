@@ -71,4 +71,4 @@ We can clearly see how in this case, the recursive function takes longer to run 
 <img src="img/Outputto49.png" style="align-self: center;"></img>
 </p>
 
-<b>The program took almost 43 seconds to find the value of the fibonacci sequence for 43!</b>
+<b>The program took almost 43 seconds to find the value of the fibonacci sequence of 49!</b>
