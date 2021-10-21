@@ -65,7 +65,7 @@ When it comes to making a graph in Java, we'll use <b><a href="https://github.co
 	<img src="img/OutputGraph.png" style="align-self: center;"></img>
 </p>
 
-We can clearly see how in this case, the recursive function takes longer to run than the iterative one, the reason why is that no matter the number, the iterative function will always be linear and run on O(1) time. Meanwhile, the recursive function grows at an exponential rate, or O(2^n), as it has to go through the entire tree of possible values before arriving at the solution. This exponential graph can be viewed perfectly when we graph the execution time of the function as we go from 0 to 49:
+We can clearly see how in this case, the recursive function takes longer to run than the iterative one, the reason why is that no matter the number, the iterative function will always be linear and run on O(n) time. Meanwhile, the recursive function grows at an exponential rate, or O(2^n), as it has to go through the entire tree of possible values before arriving at the solution. This exponential graph can be viewed perfectly when we graph the execution time of the function as we go from 0 to 49:
 	
 <p align="center">
 <img src="img/Outputto49.png" style="align-self: center;"></img>
