@@ -33,7 +33,7 @@ The recursive function, checks if the number is either 0 or 1 and returns it, ot
     	return CurrNumber;
    	}
 	
-When it comes to making a graph in Java, we'll use <b><a href="https://github.com/yannrichet/jmathplot">JMathPlot repo</a></b>, which is similar to Matplotlib in Python, and allows us to graph arrays utilizing JFrame and plots.
+When it comes to making a graph in Java, we'll use <b><a href="https://github.com/yannrichet/jmathplot">JMathPlot</a></b>, which is similar to Matplotlib in Python, and allows us to graph arrays utilizing JFrame and plots.
 
 <b>Creating the PlotPanel:</b>
 
