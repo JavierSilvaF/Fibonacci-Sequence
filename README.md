@@ -17,11 +17,11 @@ The recursive function, checks if the number is either 0 or 1 and returns it, ot
 			else
 		return FibonacciRecursive(n - 1) + FibonacciRecursive(n - 2);
 	}
-Esentially it does this:
+<b>Esentially it does this:</b>
 <p align="center">
 	<img src="https://i.imgur.com/tZncFAL.png" style="align-self: center;"></img>
 </p>
-And its Iterative counterpart:
+<b>And its Iterative counterpart:</b>
 
   	public static long FibonacciIterative(long n) {
    	int PrevPrev, PrevNumber = 0, CurrNumber = 1;   
@@ -35,11 +35,11 @@ And its Iterative counterpart:
 	
 When it comes to making a graph in Java, we'll use <b><a href="https://github.com/yannrichet/jmathplot">JMathPlot repo</a></b>, which is similar to Matplotlib in Python, and allows us to graph arrays utilizing JFrame and plots.
 
-Creating the PlotPanel:
+<b>Creating the PlotPanel:</b>
 
 	Plot2DPanel plot = new Plot2DPanel();
 
-Defining the Legend Position and Title:
+<b>Defining the Legend Position and Title:</b>
 
 	plot.addLegend("SOUTH");
 	BaseLabel title = new BaseLabel("Recursive vs Iterative Fibonacci:", Color.black, 0.5, 1.1);
@@ -47,12 +47,12 @@ Defining the Legend Position and Title:
 	plot.addPlotable(title);
 
 
-Adding the line plots to the plot:
+<b>Adding the line plots to the plot:</b>
 
 	plot.addLinePlot("Recursive Plot", InputA, TimeA);
 	plot.addLinePlot("Iterative Plot", InputB, TimeB);
 
-Finally, putting the Plot into a JFrame:
+<b>Finally, putting the Plot into a JFrame:</b>
 
 	JFrame frame = new JFrame("Valencia College - Javier Silva");
 	frame.setSize(600, 600);
@@ -70,3 +70,5 @@ We can clearly see how in this case, the recursive function takes longer to run 
 <p align="center">
 <img src="img/Outputto49.png" style="align-self: center;"></img>
 </p>
+
+<b>The program took almost 43 seconds to find the value of the fibonacci sequence for 43!</b>
