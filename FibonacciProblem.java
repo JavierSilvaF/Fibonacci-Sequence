@@ -1,10 +1,11 @@
+// Required Libraries:
 import javax.swing.*;
 import org.math.plot.*;
 import org.math.plot.plotObjects.*;
 import java.awt.*;
 
 public class FibonacciProblem {
-    //Function to calculate the Fibonacci Number through Recursion:
+    // Function to calculate the Fibonacci Number through Recursion:
     public static long FibonacciRecursive(long n) {
         if (n == 0){ return n;}
         if (n == 1){ return n;}
@@ -12,7 +13,7 @@ public class FibonacciProblem {
             return FibonacciRecursive(n - 1) + FibonacciRecursive(n - 2);
     }
 
-    //Function to calculate the Fibonacci Number through Iteration:
+    // Function to calculate the Fibonacci Number through Iteration:
     public static long FibonacciIterative(long n) {
         int PrevPrev, PrevNumber = 0, CurrNumber = 1;
         
@@ -26,11 +27,13 @@ public class FibonacciProblem {
 
     public static void main(String[] args) {
     
-    //Declaring the Arrays for the Recursive Method:
+    // Declaring the Arrays for the Recursive Method:
     double[] TimeA = new double[21];
     double[] InputA = new double[21];
 
     for(int i = 0; i < 21; i++){
+        System.out.println("Currently calculating number:");
+        System.out.println(i);
 
         long start = System.nanoTime();
         FibonacciRecursive(i);
@@ -62,25 +65,26 @@ public class FibonacciProblem {
 
     System.out.println("Done with the numbers!");
 
-    // create your PlotPanel (you can use it as a JPanel)
+    // Creating the PlotPanel:
     Plot2DPanel plot = new Plot2DPanel();
 
-    // define the legend position
+    // Defining the Legend Position and Title:
     plot.addLegend("SOUTH");
-
-    // add a line plot to the PlotPanel
-    plot.addLinePlot("Recursive Plot", InputA, TimeA);
-    plot.addLinePlot("Iterative Plot", InputB, TimeB);
-
     BaseLabel title = new BaseLabel("Recursive vs Iterative Fibonacci:", Color.black, 0.5, 1.1);
     title.setFont(new Font("Courier", Font.BOLD, 20));
     plot.addPlotable(title);
 
-    // put the PlotPanel in a JFrame like a JPanel
+    // Adding the line plots to the plot:
+    plot.addLinePlot("Recursive Plot", InputA, TimeA);
+    plot.addLinePlot("Iterative Plot", InputB, TimeB);
+
+
+
+    // Putting the Plot into a JFrame:
     JFrame frame = new JFrame("Valencia College - Javier Silva");
     frame.setSize(600, 600);
     frame.setContentPane(plot);
     frame.setVisible(true);
 
-    }//main
-}//class
+    }// Main
+}// Class
