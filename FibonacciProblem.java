@@ -28,10 +28,10 @@ public class FibonacciProblem {
     public static void main(String[] args) {
     
     // Declaring the Arrays for the Recursive Method:
-    double[] TimeA = new double[21];
-    double[] InputA = new double[21];
+    double[] TimeA = new double[50];
+    double[] InputA = new double[50];
 
-    for(int i = 0; i < 21; i++){
+    for(int i = 0; i < 50; i++){
         System.out.println("Currently calculating number:");
         System.out.println(i);
 
@@ -46,10 +46,10 @@ public class FibonacciProblem {
     }
 
     //Declaring the Arrays for the Iterative Method:
-    double[] TimeB = new double[21];
-    double[] InputB = new double[21];
+    double[] TimeB = new double[50];
+    double[] InputB = new double[50];
 
-    for(int i = 0; i < 21; i++){
+    for(int i = 0; i < 50; i++){
         System.out.println("Current Number:");
         System.out.println(i);
 
@@ -77,8 +77,6 @@ public class FibonacciProblem {
     // Adding the line plots to the plot:
     plot.addLinePlot("Recursive Plot", InputA, TimeA);
     plot.addLinePlot("Iterative Plot", InputB, TimeB);
-
-
 
     // Putting the Plot into a JFrame:
     JFrame frame = new JFrame("Valencia College - Javier Silva");
